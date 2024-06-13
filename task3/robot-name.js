@@ -10,7 +10,7 @@ export class Robot {
   }
 
   static generateName() {
-    const alphabet = 'ABCDEFGHIJKLMNOPRSTUWWXYZ';
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const firstLetter = alphabet[Math.floor(Math.random() * 26)];
     const secondLetter = alphabet[Math.floor(Math.random() * 26)];
     const firstNum = Math.floor(Math.random() * 10);

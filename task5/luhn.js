@@ -4,9 +4,11 @@
 //
 
 export const valid = (num) => {
-  const str = num.replace(/\s/g, '');
+  const str = num.replaceAll(' ', '');
   if (str.length <= 1) return false;
-  if (str.match(/\D/g)) return false;
+  for (let i = 0; i < num.length; i++) {
+    if (typeof (+num[i]) !== 'number') return false;
+  }
   const arr1 = [];
   for (let i = str.length - 2; i >= 0; i -= 2) {
     arr1.unshift(str[i] * 2 <= 9 ? str[i] * 2 : str[i] * 2 - 9);

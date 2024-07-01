@@ -16,7 +16,11 @@
     "max-classes-per-file": "off",
     "import/extensions": ["error", "ignorePackages", {"js": "always"}],
     "prefer-arrow-callback": 0,
-    "linebreak-style": 0
+    "linebreak-style": 0,
+	 "no-tabs": "off",
+	 "indent": "off",
+	 "no-plusplus": "off",
+	 "no-underscore-dangle": "off"
   },
   "extends": ["airbnb"],
   "settings": {

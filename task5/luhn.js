@@ -8,7 +8,8 @@ export const valid = (num) => {
 	if (str.length <= 1)
 		return false;
 	for (let i = 0; i < num.length; i++) {
-		if (typeof Number(num[i]) !== "number") return false;
+		if (typeof Number(num[i]) !== "number") 
+		return false;
 	}
 	const arr1 = [];
 	for (let i = str.length - 2; i >= 0; i -= 2) {

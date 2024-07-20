@@ -4,6 +4,7 @@
 //
 
 export const encode = (str, r) => {
+	str = str.replaceAll(' ', '').toUpperCase()
 	let railIdx = 0;
 	let dir = 1;
 	let rails = new Array(r).fill('')
@@ -56,4 +57,3 @@ export const decode = (str, r) => {
 	}
 	return res;
 };
-
